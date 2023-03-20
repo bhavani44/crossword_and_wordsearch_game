@@ -1,14 +1,18 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import NutritonCrossword from './Components/NutritonCrossword';
-import WordSearch from './Components/WordSearch';
+import { FoodHealthCrossWordComponent } from './Components/CrosswordGame/CrossWord';
+import FoodHealthWordSearch from './Components/WorsSearch/WordSearch';
 
 function App() {
   return (
-    <>
-      {/* <NutritonCrossword /> */}
-      <WordSearch />
-    </>
+    <div className='d-flex flex-column justify-content-center'>
+      <div>
+        <FoodHealthCrossWordComponent />
+      </div>
+      <div>
+        <FoodHealthWordSearch />
+      </div>
+    </div>
   );
 }
 
